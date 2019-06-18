@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link href="style.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			height: auto;
+		}
+
+		@font-face {
+			font-family: '12롯데마트행복Bold';
+			src: url(12롯데마트행복Bold.ttf) format('truetype');
+		}
+
+		header {
+			font-family: '12롯데마트행복Bold';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-image: url('background3.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		#mask {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0%;
+			right: 0%;
+			z-index: 0;
+			background-color: black;
+			opacity: 0.6;
+		}
+
+		#header_name {
+			position: absolute;
+			font: 60px "12롯데마트행복Bold";
+			width: 100%;
+			padding-top: 15%;
+			text-align: center;
+			background-color: none;
+			color: white;
+			animation-name: header_name;
+			animation-duration: 2s;
+		}
+
+		@keyframes header_name {
+			from {
+				margin-top: 5%;
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		#lable_id {	
+			display: flex;
+			margin-top: 20%;
+			width: 100%;
+			justify-content: center;
+			animation-name: header_lg_pw;
+			animation-duration: 1.5s;
+			animation-delay: 1s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes header_lg_pw {
+			from {
+				margin-top: 30%;
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		#lable_id input {
+			font-size: 20px;
+			padding-left: 20px;
+			outline: none;
+			cursor: pointer;
+		}
+
+		#pm_id {
+			position: absolute;
+			background-color: black;
+			color: white;
+			width: 30%;
+			height: 45px;
+			border: none;
+			border-radius: 40px 80px;
+			justify-content: center;
+			opacity: 0.7;
+		}
+
+		#pm_pw {
+			position: absolute;
+			background-color: black;
+			color: white;
+			width: 30%;
+			margin-top: 5%;
+			height: 45px;
+			border: none;
+			border-radius: 40px 80px;
+			justify-content: center;
+			opacity: 0.7;
+		}
+
+		#pm_lg {
+			position: absolute;
+			background-color: black;
+			color: white;
+			width: 15%;
+			margin-top: 10%;
+			height: 45px;
+			border: none;
+			border-radius: 40px 80px;
+			justify-content: center;
+			opacity: 0.7;
+		}
+
+		#menu {
+			width: 5%;
+			height: 5%;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="mask"></div>
+		<p id="header_name">Team. Lequin</p>
+		<label id="lable_id">
+			<input type="text" id="pm_id" placeholder="id">
+			<input type="password" id="pm_pw" placeholder="password">
+			<button id="pm_lg" onclick="clicked()">LOGIN</button>
+		</label>
+	</header>
+	<main>
+	</main>
+	<footer>
+
+	</footer>
+	<script>
+		function clicked(){
+			alert("CLICK!");
+		}
+	</script>
+</body>
+</html>
